@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            /*Dessa forma selecionamos todas as tags h1 para edição de estilos em css*/
+            background-color: red;
+        }
+        h1 {
+            /*Existem ordens de especificidade que garantem quais comandos serão executdos primeiro ou por último e qual o comando que predomina sobre o outro*/
+            background-color: black;
+            /*Nesse caso a ordem de especificidade garante que o último comando para a tag h1 seja o predominante*/
+        }
+        #identificador-unico {
+            /*Dessa forma editamos somente tags com o id especificado, garantindo uma ordem de especificidade maior sobre a tag com esse id e sobre os estilos impostos sobre a tag anteriormente.*/
+            color: green;
+        }
+        .segunda-classificacao {
+            /*Dessa forma editamos os estilos somente de quem tem essa class, garantindo maior especificidade sobre qual ou quais tags serão editadas, mas não sobrepõe o id.*/
+            color: white;
+        }
+
+    </style>
+    <title>Meu HTML</title>
+</head>
+<body>
+    <h1 id="Identificador-unico" class="Classificacao-propria">
+    <!--O id é o identificador de uma tag, não pode haver mais de uma tag com o mesmo id-->
+    <!--O class é a forma que temos de identificar uma ou um conjunto de tags por meio de um nome-->
+        Lorem, ipsum dolor.
+    </h1>
+    <h2 class="Classificacao-propria segunda-classificacao">
+    <!--Podemos dar mais de um class para cada tag, além de poder repitir tags já usadas afim de relacionar tags para editar estilos ou funções.-->
+        Lorem, ipsum dolor.
+    </h2>
+</body>
+</html>
