@@ -2,106 +2,49 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         body {
-            background-image: url("https://th.bing.com/th/id/R.d2edb29f3f970c36aadecbb01ed0bb79?rik=pOKdAp3Twbx5FA&riu=http%3a%2f%2fbackgroundcheckall.com%2fwp-content%2fuploads%2f2017%2f12%2fnetflix-background-9.jpg&ehk=DOY%2fzBYBDygdr32qdAxnK%2bKfmV2GYNx2uTqa4n8Ea%2fU%3d&risl=&pid=ImgRaw&r=0");
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/ca7e42cf-7c17-4ac7-b1a8-8b958aee1750/BR-pt-20211026-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+            background-size: cover;
+            background-position: top center;
         }
-        #head {
-            position: relative;
-            top: 1%;
-            transform: translateY(2%);
+        #heading {
+            background: rgba(0, 0, 0, 0.5);
         }
-        #cabecalho {
-            width: 794px;
-            height: 45px;
+        #heading div {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
         }
-        #headersun {
-            width: 704px;
-            height: 36px;
-            padding-top: 8px;
-            margin-right: 45px;
-            margin-left: 45px;
+        #heading .logo {
+            padding: 15px 0;
+            font-size: 20px;
+            text-transform: uppercase;
         }
-        #login-b {
+        .logo a {
             color: white;
-            padding: 0px;
-            margin: 0px;
-            text-align: center;
-            position: relative;
-            top: 25%;
+            text-decoration: none;
             font-family: sans-serif;
-        }
-        #login {
-            width: 90px;
-            height: 36px;
-            background-color: red;
-            border-radius: 6px;
-            float: right;
-            position: relative;
-            text-align: center;
-        }
-        #text-head {
-            padding: 70px 45px 70px 45px;
-        }
-        #text {
-            width: 704px;
-            height: 367px;
-            padding-top: 75px;
-            padding-bottom: 75px;
-            margin-right: 0px;
-            float: center;
-        }
-        #text h1 {
-            color: white;
-            font-family: sans-serif;
-            font-size: 50px;
-            width: 640px;
-            height: 110px;
-            margin: 0px 32px 0px 32px;
-            text-align: center;
-        }
-        #text h2 {
-            color: white;
-            font-family: Helvetica;
-            font-weight: 400;
-            font-size: 26px;
-            width: 640px;
-            height: 31px;
-            margin: 16px 32px 16px 32px;
-            text-align: center;
-        }
-        #text h3 {
-            color: white;
-            font-family: Helvetica;
-            font-weight: 400;
-            font-size: 23px;
-            text-align: center;
-            margin: 0px 56.6px 0px 56.6px;
-            padding: 0px 70.3px 0px 70.3px;
         }
     </style>
     <title>Netflix Brasil</title>
 </head>
 <body>
-    <div id="head">
-        <div id="cabecalho">
-            <div id="headersun">
-                <span style="width: 108px; height: 32px; margin-right: 372px;"id="logo-home"><img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png" alt="netflix" width="108px" 
-                height="28px"></span>
-                    <a href="#"><div id="login"><text id="login-b">Entrar</text></div></a>
-            </div>
+    <header id="heading">
+        <div>
+            <h1 class="logo">
+                <a href="#">Netflix</a>
+            </h1>
+            <h2 class="logo">
+                <a href="#">Entrar</a>
+            </h2>
         </div>
-        <div id="text-head">
-            <div id="text">
-                <h1>Filmes, séries e muito mais. Sem limites.</h1>
-                <h2>Assista onde quiser. Cancele quando quiser.</h2>
-                <form action="">
-                    <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-                </form>
-            </div>
-        </div>
-    </div>
+    </header>
 </body>
 </html>
