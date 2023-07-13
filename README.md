@@ -3,4 +3,4 @@
 * São todas as minhas práticas e anotações do curso;
 * Definições da aula ou pesquisadas na [Developer Mozilla](https://developer.mozilla.org/pt-BR/docs/Web), [W3 School](https://www.w3schools.com/)
 
-> De [Luiz Zamberlan](https://github.com/LuiZamberlan) :)
+> De [luizhzamberlan](https://github.com/LuiZamberlan)
